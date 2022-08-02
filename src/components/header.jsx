@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand bg-light">
 
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Hall</a>
@@ -21,7 +21,7 @@ const Header = () => {
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More...</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">More...</a>
 
           <ul class="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Purchase</a></li>
@@ -31,6 +31,10 @@ const Header = () => {
         </li>
       </ul>
     </div>
+      <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-primary" type="submit">Search</button>
+      </form>
   </div>
 </nav>
   );
