@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../../public/img/background.png"), linear-gradient(to right, #0068f0b4, #fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
