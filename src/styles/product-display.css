@@ -1,0 +1,16 @@
+#div{
+    width: 100%;
+}
+#card{
+    width: 32%;
+    height: 48rem;
+}
+.card-body{
+    position: relative;
+}
+#btn {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+
+}
