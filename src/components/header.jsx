@@ -1,4 +1,5 @@
 const Header = () => {
+
   return (
 <nav class="navbar navbar-expand bg-light">
 
@@ -30,6 +31,7 @@ const Header = () => {
           </ul>
         </li>
       </ul>
+          <span className="badge bg-info ms-3">user name</span>
     </div>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
