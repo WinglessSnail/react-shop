@@ -1,12 +1,16 @@
 import Header from "./components/header";
 import Login from "./components/login-form";
-import "./styles/app.css"
+import Display from "./components/product-display";
+import "./styles/app.css";
 
 function App() {
-  return ( 
+  return (
     <>
-      <Header/>
-      <Login/>
+      <Header />
+      <Login />
+      <div className="container">
+        <Display />
+      </div>
     </>
   );
 }

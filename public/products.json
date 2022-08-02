@@ -5,12 +5,12 @@
     {"id": 4,"name": "hat", "img": "./img/hat.jpg","price" :"$37.00"},
     {"id": 5,"name": "gloves", "img": "./img/gloves.jpg","price" :"$12.50"},
     {"id": 6,"name": "scarf", "img": "./img/scarf.jpg","price" :"$54.40"},
-    {"id": 7,"name": "speakers","img": "./img/speakers", "price" :"$60.00"},
-    {"id": 8,"name": "dodecahedron","img":"./img/dodecahedron","price":"$8.00"},
-    {"id": 9,"name": "puzzle ","img": "./img/puzzle", "price" :"$18.00"},
-    {"id": 10,"name": "backpack ","img": "./img/backpack", "price" :"$76.00"},
-    {"id": 11,"name": "flask gift box","img": "./img/flask", "price":"$155.00"},
-    {"id": 12,"name": "lighter ","img": "./img/lighter", "price" :"$46.00"},
-    {"id": 13,"name": "baseball bat ","img": "./img/bat", "price" :"$276.00"},
-    {"id": 14,"name": "geforce rtx ","img": "./img/rtx", "price" :"$3499.99"}
+    {"id": 7,"name": "speakers","img": "./img/speakers.jpg", "price" :"$60.00"},
+    {"id": 8,"name": "dodecahedron","img":"./img/dodecahedron.jpg","price":"$8.00"},
+    {"id": 9,"name": "puzzle ","img": "./img/puzzle.jpg", "price" :"$18.00"},
+    {"id": 10,"name": "backpack ","img": "./img/backpack.jpg", "price" :"$76.00"},
+    {"id": 11,"name": "flask gift box","img": "./img/flask.jpg", "price":"$155.00"},
+    {"id": 12,"name": "lighter ","img": "./img/lighter.jpg", "price" :"$46.00"},
+    {"id": 13,"name": "baseball bat ","img": "./img/bat.jpg", "price" :"$276.00"},
+    {"id": 14,"name": "geforce rtx ","img": "./img/rtx.jpg", "price" :"$3499.99"}
 ]
