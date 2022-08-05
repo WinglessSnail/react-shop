@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = (props) => {
 
   return (
 <nav class="navbar navbar-expand bg-light">
@@ -31,8 +31,8 @@ const Header = () => {
           </ul>
         </li>
       </ul>
-          <span className="badge bg-info ms-3">user name</span>
-    </div>
+          <span className="badge bg-info ms-3">{props.name}</span>
+    </div>  
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-primary" type="submit">Search</button>

@@ -1,8 +1,8 @@
 [
     {"id":1, "name": "joey","email":"joey@email.com" },
     {"id":2, "name": "chandler","email":"chandler@email.com" },
-    {"id":3, "name": "monika","email":"monika@email.com" },
+    {"id":3, "name": "monica","email":"monica@email.com" },
     {"id":4, "name": "ross","email":"ross@email.com" },
-    {"id":5, "name": "phoebe","email":"phoebee@email.com" },
+    {"id":5, "name": "phoebe","email":"phoebe@email.com" },
     {"id":6, "name": "rachel","email":"rachel@email.com" }
 ]
