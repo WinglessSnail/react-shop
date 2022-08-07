@@ -5,10 +5,7 @@ const Login = (props) => {
   const [users, setusers] = useState([]);
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
-
-  function isValidEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
+  
 
   const handleChange = (e) => {
     if (!isValidEmail(e.target.value)) {
@@ -16,38 +13,17 @@ const Login = (props) => {
     } else {
       setError(null);
     }
-
+    
     setUserEmail(e.target.value);
   };
 
-  useEffect(() => {
+  function handleClickLogin() {
     fetch("http://localhost:3000/users.json")
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setusers(result);
-        },
-        (error) => {
-          alert("error");
-        }
-      );
-  }, []);
-
-  function handleClickLogin(porps) {
-    fetch("http://localhost:3000/users.json")
-      .then((res) => res.json())
-      .then(
-        (users) => {
-          //legacy code
-          // for (let i = 0; i < users.length; i++) {
-          //   if (users[i].name === userName && users[i].email === userEmail) {
-          //     props.setname(users[i].name);
-          //   } else {
-          //     console.log("user does not exist");
-          //   }
-          // }
-          const user = users.find(
-            (u) => u.name === userName && u.email === userEmail
+    .then((res) => res.json())
+    .then(
+      (users) => {
+            const user = users.find(
+              (u) => u.name === userName && u.email === userEmail
           );
           if (user) {
             props.setname(user.name);
@@ -58,12 +34,12 @@ const Login = (props) => {
         (error) => {
           alert("error");
         }
-      );
-  }
-  const handleChangeName = (e) => {
+        );
+      }
+      const handleChangeName = (e) => {
     setUserName(e.target.value);
   };
-
+  
   return (
     <div className="container my-4 py-3 bg-light">
       <div className="container mb-3">
@@ -100,5 +76,10 @@ const Login = (props) => {
     </div>
   );
 };
+
+function isValidEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
+}
+
 
 export default Login;

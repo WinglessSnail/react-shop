@@ -1,5 +1,9 @@
 const Header = (props) => {
 
+  const handleChangeSearch = e=>{
+    props.setSearch(e.target.value)
+  }
+
   return (
 <nav class="navbar navbar-expand bg-light">
 
@@ -34,7 +38,7 @@ const Header = (props) => {
           <span className="badge bg-info ms-3">{props.name}</span>
     </div>  
       <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={handleChangeSearch}/>
         <button className="btn btn-outline-primary" type="submit">Search</button>
       </form>
   </div>
