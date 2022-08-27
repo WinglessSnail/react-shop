@@ -16,7 +16,7 @@ function App() {
           <Product search={search} />
         </div>
       ) : (
-        <Login setname={setname} />
+        <Login setname={setname} /> 
       )}
     </>
   );

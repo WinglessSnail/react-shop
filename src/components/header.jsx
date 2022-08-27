@@ -25,15 +25,6 @@ const Header = (props) => {
           <a class="nav-link" href="#">Pricing</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">More...</a>
-
-          <ul class="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Purchase</a></li>
-                <li><a className="dropdown-item" href="#">Become a member</a></li>
-                <li><a className="dropdown-item" href="#">Support</a></li>
-          </ul>
-        </li>
       </ul>
           <span className="badge bg-info ms-3">{props.name}</span>
     </div>  
